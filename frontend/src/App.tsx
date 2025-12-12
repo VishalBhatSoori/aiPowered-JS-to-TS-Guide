@@ -10,7 +10,28 @@ import "./App.css";
 
 function App() {
   const [code, setCode] = useState(
-    `// "Paste or Type Your JavaScript Code Here"`
+    `//"Paste or Type Your JavaScript Code Here"
+
+
+//For recruiters: down here is an example just remove the /* at the top an */ at the bottom
+/* 
+import cors from 'cors';
+import express from 'express';
+import aiRoute from './routes/ai.routes.js';
+
+const app = express();
+
+app.use(cors());
+
+app.use(express.json());
+app.get('/',(req,res)=>{
+    res.send("Hello from code reviewer");
+})
+
+app.use('/ai',aiRoute);
+
+export default app;
+*/`
   );
 
   const [review, setreview] = useState(
