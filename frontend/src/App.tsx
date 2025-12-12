@@ -9,9 +9,9 @@ import Editor from "react-simple-code-editor";
 import "./App.css";
 
 function App() {
-  const [code, setCode] = useState(`function sum(){
-     return 1 + 1;
-    }`);
+  const [code, setCode] = useState(
+    `// "Paste or Type Your JavaScript Code Here"`
+  );
 
   const [review, setreview] = useState(
     `Waiting for user to Enter or Paste the Code and Press Review .....`
