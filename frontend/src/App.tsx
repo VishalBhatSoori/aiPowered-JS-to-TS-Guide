@@ -44,9 +44,12 @@ export default app;
 
   async function reviewCode() {
     setreview("Waiting for Your Code Buddy to review the code .....");
-    const response = await axios.post("http://localhost:3000/ai/post-code", {
-      code,
-    });
+    const response = await axios.post(
+      `${import.meta.env.VITE_BACKEND_URL}/ai/post-code`,
+      {
+        code,
+      }
+    );
     setreview(response.data);
   }
   return (
