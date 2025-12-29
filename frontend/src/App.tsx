@@ -7,6 +7,7 @@ import Markdown from "react-markdown";
 import Editor from "react-simple-code-editor";
 //import reHypeHighlight from "rehype-highlight";
 import "./App.css";
+import headerImage from "./assets/JsToTs.png";
 
 function App() {
   const [code, setCode] = useState(
@@ -54,6 +55,11 @@ export default app;
   }
   return (
     <>
+      <header className="top-header">
+        <div className="header-content">
+          <img src={headerImage} alt="JS to TS" className="header-image" />
+        </div>
+      </header>
       <main>
         <div className="left">
           <div className="code">
@@ -69,7 +75,7 @@ export default app;
                 fontSize: 16,
                 border: "1px solid #ddd",
                 borderRadius: "5px",
-                height: "100%",
+                minHeight: "100%", //changed this from height to minHeight
                 width: "100%",
                 caretColor: "black",
               }}
