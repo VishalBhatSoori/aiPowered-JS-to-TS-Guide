@@ -97,4 +97,5 @@ main .right {
   background-color: rgb(192, 192, 192);
   padding: 1rem 2rem;
   overflow-y: auto;
+  color: #333333;
 }
