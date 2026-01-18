@@ -66,3 +66,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.review {
+  
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 20%;
+  
+  background-color: #646cff;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-align: center;
+  
+  border-radius: 8px;
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.review:not(.disabled):hover {
+  background-color: #535bf2;
+}
+.review.disabled {
+  opacity: 0.5;              /* Make it see-through */
+  cursor: not-allowed;       /* Show the 'stop' sign */
+  pointer-events: none;      /* CSS-level block on clicks (extra safety!) */
+}

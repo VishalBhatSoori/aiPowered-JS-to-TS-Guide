@@ -39,19 +39,29 @@ export default app;
     `Waiting for user to Enter or Paste the Code and Press Review .....`
   );
 
+  const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     prism.highlightAll();
   });
 
   async function reviewCode() {
+    if (isLoading) return;
+
+    setIsLoading(true);
     setreview("Waiting for Your Code Buddy to review the code .....");
-    const response = await axios.post(
-      `${import.meta.env.VITE_BACKEND_URL}/ai/post-code`,
-      {
-        code,
-      }
-    );
-    setreview(response.data);
+
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_BACKEND_URL}/ai/post-code`,
+        { code }
+      );
+      setreview(response.data);
+    } catch (error) {
+      setreview("Error connecting to server");
+    } finally {
+      setIsLoading(false);
+    }
   }
   return (
     <>
@@ -81,8 +91,11 @@ export default app;
               }}
             />
           </div>
-          <div onClick={reviewCode} className="review">
-            Review
+          <div
+            onClick={reviewCode}
+            className={`review ${isLoading ? "disabled" : ""}`}
+          >
+            {isLoading ? "Reviewing..." : "Review"}
           </div>
         </div>
         <div className="right">
