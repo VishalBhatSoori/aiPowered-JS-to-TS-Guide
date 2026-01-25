@@ -1,0 +1,17 @@
+# Dependency directories (we'll install these FRESH inside the container)
+node_modules
+npm-debug.log
+
+# Git files (the container doesn't need your version history)
+.git
+.gitignore
+
+# Environment secrets (we'll pass these in a safer way later)
+.env
+
+# Docker files (meta!)
+Dockerfile
+docker-compose.yml
+
+# OS-specific files
+.DS_Store
