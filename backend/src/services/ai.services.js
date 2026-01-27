@@ -77,11 +77,18 @@ async function generateFromPrompt(code) {
     return response.text;
   } catch (error) {
     if (error.status === 429) {
-        console.log("Rate limit exceeded. Waiting 60s...");
         await new Promise(resolve => setTimeout(resolve, 60000));
         return generateFromPrompt(code);
     }
-    throw error;
+    
+    if (error.status === 503) {
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        return generateFromPrompt(code);
+    }
+
+    console.error("Unknown error", error.message);
+    
+    return "The LLM is currently busy. Please try again in a moment.";
   }
 }
 
