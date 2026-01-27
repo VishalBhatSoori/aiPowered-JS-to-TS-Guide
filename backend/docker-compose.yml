@@ -1,0 +1,20 @@
+services:
+    backend1:
+        image: vishalbhatsoori/code-review-backend
+        container_name: instance1
+        ports:
+            - "3001:3000"
+        env_file:
+            - .env
+        restart: always
+        pull_policy: always
+    
+    backend2:
+        image: vishalbhatsoori/code-review-backend
+        container_name: instance2
+        ports:
+            - "3002:3000"
+        env_file:
+            - .env
+        restart: always
+        pull_policy: always
