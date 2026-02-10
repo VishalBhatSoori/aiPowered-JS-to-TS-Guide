@@ -86,7 +86,7 @@ export default app;
                 fontSize: 16,
                 border: "1px solid #ddd",
                 borderRadius: "5px",
-                minHeight: "100%", //changed this from height to minHeight
+                minHeight: "100%",
                 width: "100%",
                 caretColor: "black",
               }}
