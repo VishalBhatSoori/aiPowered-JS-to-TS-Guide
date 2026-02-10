@@ -2,6 +2,7 @@ import axios from "axios";
 //import "highlight.js/styles/github-dark.css";
 import prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
+//import "prismjs/themes/prism.css";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import Editor from "react-simple-code-editor";
