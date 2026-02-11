@@ -9,11 +9,17 @@
 
 ## 🎨 Preview
 
-!Send the Request Here by Pasting or Writing the Code and Press Review![alt text](/assets/image.png)!Request is Being Processed![alt text](/assets/image-3.png)![alt text](/assets/image-2.png)!Response![alt text](/assets/image-1.png)!Response Header with Server:Nginx![alt text](/assets/image-2.jpeg)!Rate Limiting Based on IP to prevent single user from Maling multiple requests!![alt text](/assets/image-4.jpeg)
+!Send the Request Here by Pasting or Writing the Code and Press Review![alt text](/assets/image.png)!Request is Being Processed![alt text](/assets/image-3.png)!Response![alt text](/assets/image-1.png)!Response Header with Server:Nginx![alt text](/assets/image-2.jpeg)!Rate Limiting Based on IP to prevent single user from Maling multiple requests!![alt text](/assets/image-4.jpeg)
+
+## 
+
+## Architecture 
+![alt text](/assets/image-5.png)
 
 ## 🛠 Tech Stack
 
-* **Frontend:** React / Next.js
+* **Frontend:** React
 * **Backend:** Node.js (Express)
-* **AI Engine:** OpenAI / Anthropic API
-* **Infrastructure:** Docker & GitHub Actions
+* **AI Engine:** Gemini API
+* **Infrastructure:** Docker , Nginx and AWS(EC2 instance)
+
