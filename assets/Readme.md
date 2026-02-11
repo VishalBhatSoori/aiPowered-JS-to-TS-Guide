@@ -9,4 +9,4 @@
 
 ## 🎨 Preview
 
-!Send the Request Here by Pasting or Writing the Code and Press Review![alt text](/frontend/public/image.png)!Response![alt text](/frontend/public/image-1.png)!![alt text](/frontend/public/image-2.jpeg)
+!Send the Request Here by Pasting or Writing the Code and Press Review![alt text](/assets/public/image.png)!Request is Being Processed!![alt text](assets/image-3.png)![alt text](image-2.png)!Response![alt text](/assets/image-1.png)!Response Header with Server:Nginx![alt text](/assets/public/image-2.jpeg)
