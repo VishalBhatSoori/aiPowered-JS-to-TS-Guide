@@ -6,3 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](#)
 [![Docker Support](https://img.shields.io/badge/docker-ready-blue?logo=docker)](#)
+
+## 🎨 Preview
+
+![Project Screenshot]![alt text](/frontend/public/image.png)![alt text](/frontend/public/image-1.png)
