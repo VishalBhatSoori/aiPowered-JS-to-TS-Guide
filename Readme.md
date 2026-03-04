@@ -7,6 +7,11 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](#)
 [![Docker Support](https://img.shields.io/badge/docker-ready-blue?logo=docker)](#)
 
+## 📌 Table of Contents
+* [🎨 Preview](#-preview)
+* [🏗 Architecture](#-architecture)
+* [Capacity Planning and Estimation](#capacity-planning-and-estimation)
+
 ## 🎨 Preview
 
 ! Send the Request Here by Pasting or Writing the Code and Press Review![alt text](/assets/image.png)! Request is Being Processed![alt text](/assets/image-3.png)! Response![alt text](/assets/image-1.png)! Response Header with Server:Nginx![alt text](/assets/image-2.jpeg)! Rate Limiting Based on IP to prevent single user from making multiple requests![alt text](/assets/image-4.jpeg)
