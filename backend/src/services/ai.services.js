@@ -70,24 +70,24 @@ async function generateFromPrompt(code) {
   console.log('Input:', code);
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash', 
+      model: 'gemini-2.5-flash',
       contents: SYSTEM_PROMPT + "\n\nConvert this code:\n" + code
     });
 
     return response.text;
   } catch (error) {
     if (error.status === 429) {
-        await new Promise(resolve => setTimeout(resolve, 60000));
-        return generateFromPrompt(code);
+      await new Promise(resolve => setTimeout(resolve, 60000));
+      return generateFromPrompt(code);
     }
-    
+
     if (error.status === 503) {
-        await new Promise(resolve => setTimeout(resolve, 5000));
-        return generateFromPrompt(code);
+      await new Promise(resolve => setTimeout(resolve, 5000));
+      return generateFromPrompt(code);
     }
 
     console.error("Unknown error", error.message);
-    
+
     return "The LLM is currently busy. Please try again in a moment.";
   }
 }

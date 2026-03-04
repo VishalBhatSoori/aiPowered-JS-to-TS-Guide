@@ -7,7 +7,6 @@ RUN npm install
 COPY . .
 
 # production stage or app running stage
-
 FROM node:20-alpine
 WORKDIR /usr/src/app
 

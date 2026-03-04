@@ -1,11 +1,12 @@
+import { generateFromPrompt } from "../services/ai.services.js";
 
-async function controllerPostCode(req,res){
+async function controllerPostCode(req, res) {
     try {
         const code = req.body.code;
         if (!code) {
             return res.status(400).send("Code is required please");
         }
-        const response = await aiService(code);
+        const response = await generateFromPrompt(code);
         if (response.includes("The LLM is currently busy")) {
             return res.status(503).send(response);
         }
